@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/consumer-eureka-8080" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/euraka-8001/pom.xml" />
         <option value="$PROJECT_DIR$/euraka8002/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-eureka-9001/pom.xml" />
+        <option value="$PROJECT_DIR$/consul-eureka-8080/pom.xml" />
+        <option value="$PROJECT_DIR$/provider-eureka-9002/pom.xml" />
       </list>
     </option>
   </component>

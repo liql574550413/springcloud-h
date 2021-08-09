@@ -10,11 +10,16 @@
   <modules>
     <module>eureka-8001</module>
     <module>eureka8002</module>
+    <module>provider-eureka-9001</module>
+    <module>provider-eureka-9002</module>
+    <module>consumer-eureka-8080</module>
+    <module>common-api</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.cloud-version>Hoxton.SR12</spring.cloud-version>
     <spring.boot-version>2.3.12.RELEASE</spring.boot-version>
+    <lombok.version>1.16.10</lombok.version>
   </properties>
 
 
@@ -39,6 +44,11 @@
         <version>${spring.cloud-version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

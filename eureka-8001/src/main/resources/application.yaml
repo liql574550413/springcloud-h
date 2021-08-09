@@ -4,12 +4,16 @@ server:
 #单机模式
 eureka:
   instance:
-    hostname: hostname
+    hostname: eureka8001.com #eureka服务端的实例名称  方便根据名字在代码中获取实例
   client:
-    fetch-registry: false #是否向注册中心注册自己 ，因为自己就是注册中心 所以不用向自己注册自己
-    register-with-eureka: false  # 发现服务列表，因为自己是注册中心 所以不用发现
-    serviceUrl:
-      #单机版注册地址  如果是集群，则把后面的值改成其它的注册中心对应的地址
-      defaultZone: http://localhost:8002/eureka/
+    register-with-eureka: false #是否向注册中心注册自己 ，因为自己就是注册中心 所以不用向自己注册自己
+    fetch-registry: false # 发现服务列表，因为自己是注册中心 所以不用发现
+    service-url:
+      #单机版注册地址,写自己的地址  如果是集群，则把后面的值改成 其它的 注册中心 对应的地址
+      defaultZone: http://eureka8001.com:8001/eureka
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
+
 
 
