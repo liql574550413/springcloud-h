@@ -14,6 +14,7 @@
     <module>provider-eureka-9002</module>
     <module>consumer-eureka-8080</module>
     <module>common-api</module>
+    <module>consumer-openfeign-8080</module>
   </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
